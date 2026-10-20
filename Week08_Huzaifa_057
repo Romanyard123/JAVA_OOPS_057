@@ -1,0 +1,36 @@
+public class Driver{
+    private String name ;
+    private int id ;
+
+    public Driver(String name , int id ){
+        this.name = name ;
+        this.id = id ;
+    }
+
+    public Driver( Driver other ){
+        this.name = other.name ;
+        this.id = other.id ;
+    }
+
+    public void setName(String name){
+        this.name = name ;
+    }
+
+    public void setID(int Id){
+        this.id = Id ;
+    }
+
+    public String getName(){
+        return this.name ;
+    }
+
+    public int getID(){
+        return this.id ;
+    }
+
+    @Override
+    public String toString(){
+        return "The Driver name is "+ this.name +
+               "The driver id is "+ this.id ;
+    }
+}
